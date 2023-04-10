@@ -12,3 +12,24 @@ it will insert one rwo/doc and show true and object id
 db.collaction.find() - display in verticul manner
 db.collaction.find().pretty() - display in horizontal
 
+Drivers are used mongo db languages only syntax will change
+Drivers will convert JSON to BSON
+Json don't have valid datatype ObjectId, but mongodb accept this.
+we can also give id manually
+
+Create - insertOne(data, options), insertOne(data, options)
+Update - find(filter, options), findOne(filter,options)
+Update - updateOne(filter data, options), updateMany(filter data, options), replaceOne(filter data, options)
+Delete - deleteOne(filter, options), deleteMany(filter, options)
+
+while filtering $gt:200 greater then 200
+updated one and many by using set it adds new field
+update overwrite all the fields and update the new field
+
+it - load more or find().toArray() - shows all data
+
+
+find().forEach((passengerData) =>{ printjson(passengerData)})                                               		built in                                  driver language
+
+projection is fetching the data which we want to use in app = db.passengers.find({}, {Name:1}) it shows all passengers name alone
+embedded docs are nested objects or nested docs
