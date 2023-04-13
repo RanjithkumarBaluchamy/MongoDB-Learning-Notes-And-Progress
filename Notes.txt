@@ -33,3 +33,5 @@ find().forEach((passengerData) =>{ printjson(passengerData)})                   
 
 projection is fetching the data which we want to use in app = db.passengers.find({}, {Name:1}) it shows all passengers name alone
 embedded docs are nested objects or nested docs
+
+stats() - it shows db details
